@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-base-bg text-ink-primary antialiased;
+}
+
+::selection {
+  @apply bg-signal-sky/30 text-ink-primary;
+}
+
+/* Visible keyboard focus ring, kept consistent across custom components */
+:focus-visible {
+  outline: 2px solid theme("colors.signal.sky");
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Thin, quiet scrollbar that fits the dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: theme("colors.base.bg");
+}
+::-webkit-scrollbar-thumb {
+  background: theme("colors.base.border");
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.ink.muted");
+}

@@ -1,0 +1,8 @@
+TODO: Add your real resume here as `resume.pdf` (same folder as this file:
+/public/resume.pdf).
+
+The "Download Resume" button in src/config/site.ts (links.resume) already
+points at "/resume.pdf" — once you drop the file in, no code changes are
+needed.
+
+You can delete this placeholder file once resume.pdf is in place.

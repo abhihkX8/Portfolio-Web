@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.github
+out
+npm-debug.log*
+.env*.local
+.env
+README.md
+terraform
+k8s
+*.md
