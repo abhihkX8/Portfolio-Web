@@ -41,9 +41,9 @@ export const siteConfig = {
 
   // --- TODO: replace these placeholders with your real links ---
   links: {
-    github: "https://github.com/your-github-username",
-    linkedin: "https://www.linkedin.com/in/your-linkedin-id",
-    email: "your.email@example.com",
+    github: "https://github.com/abhihkX8",
+    linkedin: "www.linkedin.com/in/abhijeet-maske-devops",
+    email: "abhijeetmaske609@gmail.com",
     resume: "/resume.pdf",
   },
 
