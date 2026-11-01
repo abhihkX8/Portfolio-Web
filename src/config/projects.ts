@@ -6,19 +6,19 @@ import type { Project } from "@/types";
  */
 export const projects: Project[] = [
   {
-    slug: "kubernetes-three-tier-app",
-    title: "Kubernetes Three-Tier Application",
+    slug: "why-is-my-site-down",
+    title: "Why Is My Site Down? Dockerized Diagnostic Tool on AWS",
     description:
-      "Deployed a three-tier application (React frontend, Node.js API, MongoDB) on Kubernetes, with containerized components, defined Services and Deployments, configured scaling, and infrastructure hosted on AWS EC2.",
+      "A Python web tool that finds out why a website is failing and explains the fix in plain English, deployed on AWS EC2 with Docker, Nginx and HTTPS.",
     highlights: [
-      "Deployed a three-tier application using Kubernetes",
-      "Containerized application components using Docker",
-      "Used Kubernetes Services and Deployments",
-      "Configured horizontal scaling",
-      "Hosted infrastructure on AWS EC2",
+      "Checks DNS, TCP connection, TLS certificate, HTTP status, response time and redirect loops, then gives a plain-English cause and fix",
+      "Explains different failures separately, such as 502, 503, 504, expired or self-signed certificates, and connection refused versus timed out",
+      "Deployed on AWS EC2 inside a VPC public subnet, with a security group that opens only ports 80 and 443",
+      "Docker Compose setup with a multi-stage, non-root image and a PostgreSQL volume that keeps data across restarts",
+    
     ],
-    tech: ["Kubernetes", "Docker", "AWS EC2", "MongoDB", "Node.js", "React"],
-    github: "https://github.com/your-github-username/kubernetes-three-tier-app",
+    tech: ["AWS EC2", "AWS VPC", "Docker Compose", "Docker", "Ubantu Linux", "Python", "PostgreSQL"],
+    github: "https://github.com/abhihkX8/why-is-my-site-down",
     demo: null,
   },
   {
