@@ -55,6 +55,13 @@ export const siteConfig = {
       location: "Beed, Maharashtra",
       period: "2022 – 2025",
     },
+
+    {
+      degree: "Master of Business Administration (MBA)",
+      institution: "Aditya College, Beed",
+      location: "Beed, Maharashtra",
+      period: "2026 - 2028",
+    },
   ],
 
   // --- CTAs shown in the hero ---
